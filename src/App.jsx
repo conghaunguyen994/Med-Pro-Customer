@@ -6,6 +6,7 @@ import AppLayout from "./layouts/AppLayout";
 import HomePage from "./pages/HomePage";
 import DepartmentPage from "./pages/DepartmentPage";
 import DoctorPage from "./pages/DoctorPage";
+import CustomerFormPage from "./pages/CustomerFormPage";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/chuyen-khoa/:name" element={<DepartmentPage />} />
             <Route path="/bac-si/:name" element={<DoctorPage />} />
+            <Route path="/xac-nhan" element={<CustomerFormPage />} />
           </Routes>
         </AppLayout>
       </div>
